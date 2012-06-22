@@ -12,18 +12,18 @@ define(function(undef){
     if (thetype === 'object') {
       if (item) {
         if (typeof item.length === 'number'){
-          if (String(item) == '[object Array]') {
+          if (toString(item) == '[object Array]') {
             thetype = 'array'
           }
 
-          if (String(item) === '[object Arguments]') {
+          if (toString(item) === '[object Arguments]') {
             thetype = 'arguments'
           }
         } else if((null !== item) && !isNaN(item) && ("undefined" !== typeof item.getDate)){
           thetype = 'date'
         }
 
-        if(String(item) === '[object RegExp]') {
+        if(toString(item) === '[object RegExp]') {
           thetype = 'regexp';
         }
 
@@ -39,7 +39,7 @@ define(function(undef){
       }
     }
 
-    return (type == undef) ? thetype: thetype === type;
+    return (type === undef) ? thetype: thetype === type;
   }
 
   return typeOf
