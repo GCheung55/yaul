@@ -1,5 +1,5 @@
 // @sourceURL = yaul/xhr.js
-
+'use strict'
 var XHR = (function(){
   var ins = [
      function(){return new ActiveXObject('Microsoft.XMLHTTP')}

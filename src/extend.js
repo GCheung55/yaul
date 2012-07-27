@@ -1,5 +1,5 @@
 // @sourceURL = yaul/extend.js
-
+'use strict'
 var hasOwn = require('./hasOwn')
 var typeOf = require('./typeOf')
 

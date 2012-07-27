@@ -1,5 +1,5 @@
 // @sourceURL =  yaul/typeOf.js
-
+'use strict'
 module.exports = function typeOf ( item, type ){
   var thetype = typeof item
   
