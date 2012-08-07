@@ -1,6 +1,5 @@
-// @sourceURL =  yaul/typeOf.js
 'use strict'
-module.exports = function typeOf ( item, type ){
+module.exports = function typeOf ( item, type, undef ){
   var thetype = typeof item
   
   if (item === null)
@@ -43,5 +42,3 @@ module.exports = function typeOf ( item, type ){
 
   return (type === undef) ? thetype: thetype === type;
 }
-
-// @sourceURL =  yaul/typeOf.js
