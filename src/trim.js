@@ -1,5 +1,3 @@
-// @sourceURL = yaul/trim.js
-'use strict'
 // http://blog.stevenlevithan.com/archives/faster-trim-javascript
 // http://perfectionkills.com/whitespace-deviations/
 var ws = "[\
@@ -13,4 +11,3 @@ var ws = "[\
 module.exports = function trim () {
     return String(this).replace(trimBeginRegexp, "").replace(trimEndRegexp, "");
 }
-// @sourceURL = yaul/trim.js

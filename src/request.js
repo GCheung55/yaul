@@ -1,5 +1,3 @@
-// @sourceURL = yaul/request.js
-
 var XHR = request('./xhr')
 
 function ie8Request (method, url, data, callback) {
@@ -56,5 +54,3 @@ function xhrRequest (method, url, data, callback) {
 }
 
 module.exports = xhrRequest
-
-// @sourceURL = yaul/request.js

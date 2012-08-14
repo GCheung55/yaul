@@ -1,4 +1,3 @@
-'use strict'
 module.exports = function typeOf ( item, type, undef ){
   var thetype = typeof item
   

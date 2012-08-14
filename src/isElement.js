@@ -1,5 +1,3 @@
-// @sourceURL = yaul/isElement.js
-'use strict'
 module.exports = function isElement(obj) {
   try {
     //Using W3 DOM2 (works for FF, Opera and Chrom)
@@ -11,5 +9,3 @@ module.exports = function isElement(obj) {
     return (typeof obj==="object") && (obj.nodeType===1) && (typeof obj.style === "object") && (typeof obj.ownerDocument ==="object")
   }
 }
-
-// @sourceURL = yaul/isElement.js
