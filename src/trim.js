@@ -8,6 +8,6 @@ var ws = "[\
   , trimBeginRegexp = new RegExp("^" + ws + ws + "*")
   , trimEndRegexp = new RegExp(ws + ws + "*$")
     
-module.exports = function trim () {
-    return String(this).replace(trimBeginRegexp, "").replace(trimEndRegexp, "");
+module.exports = function trim (str) {
+    return String(str).replace(trimBeginRegexp, "").replace(trimEndRegexp, "");
 }
